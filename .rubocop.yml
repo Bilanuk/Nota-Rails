@@ -1,0 +1,43 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 3.0.2
+  Exclude:
+    - "node_modules/**/*"
+    - 'lib/generators/teladoc_migration/*'
+    - 'db/seeds.rb'
+    - 'db/seeds/**/*'
+    - 'db/migrate/*'
+    - 'db/schema.rb'
+    - 'bin/*'
+    - 'config/**/*'
+    - 'lib/utilities/*'
+    - 'vendor/**/*'
+    - 'ruby/**/*'
+
+Layout/LineLength:
+  Max: 120
+  IgnoredPatterns: ['^\s*#']
+  Exclude:
+    - 'db/schema.rb'
+
+Rails:
+  Enabled: true
+
+Rails/InverseOf:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false
+
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
