@@ -20,3 +20,11 @@ obj = Track.create(
   )
 obj.track.attach(io: File.open('app/assets/tracks/sworn-chill.mp3'), filename: 'sworn-chill.mp3', content_type: 'audio/mp3')
 obj.image_cover.attach(io: File.open('app/assets/images/sworn2.jpeg'), filename: 'sworn2.jpeg', content_type: 'image/jpeg')
+
+obj = Track.create(
+  title: 'Transition to Reality',
+  author: 'DVRST',
+  )
+obj.track.attach(io: File.open('app/assets/tracks/DVRST.mp3'), filename: 'DVRST.mp3', content_type: 'audio/mp3')
+obj.image_cover.attach(io: File.open('app/assets/images/sworn2.jpeg'), filename: 'sworn2.jpeg', content_type: 'image/jpeg')
+
